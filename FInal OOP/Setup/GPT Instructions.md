@@ -31,6 +31,7 @@ Each term below links to its dedicated note. Create separate notes with each ter
 - [[Model]]: A function mapping input features to a target feature, including both parameters and hyperparameters.
 - [[Feature]]: A measurable property (column in CSV) labeled as either `categorical` or `numerical`.
 - [[Pipeline]]: A state machine that orchestrates stages like preprocessing, splitting, training, and evaluation.
+- [[Adult Dataset]]: This is the dataset used to train the model on.
 
 **Related Tags**: `#Terminology`, `#Definitions`
 
@@ -59,16 +60,31 @@ Each term below links to its dedicated note. Create separate notes with each ter
 
 # Part I: Core Library Requirements
 
-1. **ML/Detect-Features**:
-   - Implement `detect_feature_types` in `autoop.functional.feature.detect_feature_types`.
-2. **Artifact Class**:
-   - Implement in `autoop.core.ml.artifact`.
-3. **Feature Class**:
-   - Implement in `autoop.core.ml.feature`.
+- [x] **ML/Detect-Features**:
+   - [x] Implement `detect_feature_types` in `autoop.functional.feature.detect_feature_types`.
+- [x] **Artifact Class**:
+   - [x] Implement in `autoop.core.ml.artifact`.
+- [ ] **Feature Class**:
+   - [ ] Implement in `autoop.core.ml.feature`.
+- [ ] **Metric Class**:
+   - [ ] Implement the metric class in `autoop.core.ml.metric` with the `__call__` method.
+- [ ] **Metric Extensions**:
+   - [ ] Add at least 6 metrics in `ML/metric/extensions`.
+   - [ ] Ensure at least 3 metrics are suitable for classification.
+   - [ ] Implement **Accuracy** metric for classification.
+   - [ ] Implement **Mean Squared Error** metric for regression.
+   - [ ] Do not use facades/wrappers for metric implementation; use libraries such as `numpy`.
+- [ ] **Base Model Class**:
+   - [ ] Implement the base model class in `autoop.core.ml.model`.
+- [ ] **Model Extensions**:
+   - [ ] Implement at least 3 classification models in `ML/model/extensions`.
+   - [ ] Implement at least 3 regression models in `ML/model/extensions`.
+   - [ ] You may use the facade pattern or wrappers on existing libraries for these models.
+- [ ] **Pipeline Evaluation**:
+   - [ ] Extend and modify the `execute` function in `ML/pipeline/evaluation` to return metrics for both the evaluation and training sets.
 
-… *Continue with other requirements here.*
 
-**Backlinks**: [[Artifact]], [[Feature]], [[Metric]], [[Model]], [[Pipeline]]
+**Backlinks**: [[Artifact]], [[Feature]], [[Metric]], [[Model]], [[Pipeline]], [[Dataset]], [[Pydantic]]
 
 **Tags**: `#Requirements`, `#CoreLibrary`
 

@@ -2,6 +2,7 @@
 tags:
   - Dataset
 ---
+This dataset comes from this `GitHub` page [SkLearn-50k-Salary-Prediction](https://github.com/nickbiso/SkLearn-50k-Salary-Prediction/tree/master)
 # [Adult dataset archive](https://archive.ics.uci.edu/dataset/2/adult)
 
 | Variable Name  | Role    | Type        | Demographic     | Description                                                                                                                                                                                                                                                                                                                                                                                                                     | Units | Missing Values |
@@ -23,4 +24,6 @@ tags:
 | income         | Target  | Binary      | Income          | >50K, <=50K.                                                                                                                                                                                                                                                                                                                                                                                                                    |       | no             |
 
 
-This dataset comes from this GitHub page [[SkLearn-50k-Salary-Prediction](https://github.com/nickbiso/SkLearn-50k-Salary-Prediction/tree/master)](https://github.com/nickbiso/SkLearn-50k-Salary-Prediction/blob/master/Adult%20Dataset.ipynb)
+
+
+

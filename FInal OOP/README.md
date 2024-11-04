@@ -1,4 +1,6 @@
-This is my collection of documentation for the final project for oop. 
+# OOP Final Project Docs (Dumb & Dumber)
+
+This is my collection of `documentation` for the final project for oop. 
 
 I recommend you start at [[GPT Instructions]]
 
