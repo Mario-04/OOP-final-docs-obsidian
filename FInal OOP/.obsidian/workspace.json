@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup/Instructions.md",
-                "mode": "preview",
+                "file": "Setup/GPT Instructions.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Instructions"
+              "title": "GPT Instructions"
             }
           }
         ],
@@ -207,18 +207,18 @@
   },
   "active": "def92bf9ac89d948",
   "lastOpenFiles": [
+    "Setup/GPT Instructions.md",
     "Terms and Defs/Metric.md",
     "Design Patterns/Design Pattern.md",
-    "Strategy Pattern.md",
-    "Iterator Pattern.md",
-    "Façade Pattern.md",
-    "Design Patterns/Singleton Pattern.md",
     "Setup/Instructions.md",
+    "Design Patterns/Strategy Pattern.md",
+    "Design Patterns/Iterator Pattern.md",
+    "Design Patterns/Façade Pattern.md",
+    "Design Patterns/Singleton Pattern.md",
     "Datasets",
     "Design Patterns",
     "Design Patterns/Decorator Pattern.md",
     "Design Patterns/Mixin Pattern.md",
-    "Setup/GPT Instructions.md",
     "Tests.md",
     "Terms and Defs/Artifact.md",
     "Setup/ChatGPT Setup.md",
