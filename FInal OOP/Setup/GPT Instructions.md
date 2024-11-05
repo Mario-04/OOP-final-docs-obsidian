@@ -64,8 +64,8 @@ Each term below links to its dedicated note. Create separate notes with each ter
    - [x] Implement `detect_feature_types` in `autoop.functional.feature.detect_feature_types`.
 - [x] **Artifact Class**:
    - [x] Implement in `autoop.core.ml.artifact`.
-- [ ] **Feature Class**:
-   - [ ] Implement in `autoop.core.ml.feature`.
+- [x] **Feature Class**:
+   - [x] Implement in `autoop.core.ml.feature`.
 - [ ] **Metric Class**:
    - [ ] Implement the metric class in `autoop.core.ml.metric` with the `__call__` method.
 - [ ] **Metric Extensions**:
