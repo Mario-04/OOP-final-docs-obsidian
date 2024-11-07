@@ -1,7 +1,13 @@
 We need to implement some metrics. 
 Metrics are simply just `methods` that take some `inputs` and `returns` a `real number`.
+> In this case they take the `Ground Observations` and the `Predicted Observations` (I the `Predicted Observations` are for the same parameters as the `Ground Observations`) 
+
+We only need this for #classification and #continuous
 # Implementation
-## Mean Squared Error (MSE)
+---
+## Continuous
+---
+### Mean Squared Error (MSE)
 - #Regression
 The MSE measures the average of error squares i.e. the average squared difference between the estimated values and true values. According to [GFG](https://www.geeksforgeeks.org/python-mean-squared-error/):
 
@@ -33,12 +39,34 @@ Y_pred = [0.6,1.29,1.99,2.69,3.4]  # Y_pred = Y'
 MSE = np.square(np.subtract(Y_true,Y_pred)).mean() 
 ```
 
-## Accuracy
-- #Regression
+
+### Mean Absolute Error (MAE)
+- `MAE` is measured as the average sum of absolute difference between predictions and actual observations
+- `MAE` is more robust against outliers because it does not make use of squares
+
+$$MAE = \frac{1}{N}\sum_{i=1}^{N}|\hat{Y_i}-Y_i|$$
+```python
+def meanSquaredError(ground: np.ndarray, predictions: np.ndarray) -> float:
+
+```
+
+## Classification
+---
+> Getting information from this [EvidentlyAI](https://www.evidentlyai.com/classification-metrics/multi-class-metrics) page. 
+> Or this page [Accuracy vs. precision vs. recall in machine learning: what's the difference?](https://www.evidentlyai.com/classification-metrics/accuracy-precision-recall) 
+
+- **Accuracy** shows how often a classification ML model is correct **overall**. 
+- **Precision** shows how often an ML model is correct when **predicting the target class.**
+- **Recall** shows whether an ML model can find **all objects** **of the target class**. 
+- Consider the class balance and costs of different errors when choosing the suitable metric.
+### Accuracy
+---
+> **Accuracy** is a metric that measures how often a machine learning model correctly predicts the outcome. You can calculate accuracy by dividing the number of correct predictions by the total number of predictions.
+
+$$Accuracy=\frac{Correct\_Predictions}{All\_Predictions}$$
 - $I$ Below is the indicator function that checks whether the prediction $Y_{(i)}$ is the same as the ground truth $Y$. This function returns 1 if they are equal and 0 if not.
 - The sum ($\sum$) then sums up the results from the number $n$ checks. 
 - The $\frac{1}{n}$ part then makes a percentage from the summed up values. 
-
 $$Accuracy = \frac{1}{N}\sum_{i=1}^{N}I[\hat{Y_i} = Y_i]$$
 Some python-pseudocode would look like this:
 ```python
@@ -53,17 +81,46 @@ def indicator(ground: float|Any?, prediction: float|Any?) -> bool:
 	return 1 if ground.equal(prediction) else 0
 ```
 
-## Mean Absolute Error (MAE)
-- `MAE` is measured as the average sum of absolute difference between predictions and actual observations
-- `MAE` is more robust against outliers because it does not make use of squares
+#### Pros and Cons
 
-$$MAE = \frac{1}{N}\sum_{i=1}^{N}|\hat{Y_i}-Y_i|$$
-```python
-def meanSquaredError(ground: np.ndarray, predictions: np.ndarray) -> float:
+Let’s sum up the accuracy metric!
 
-```
+**Pros:**
+- Accuracy is a helpful metric when you deal with **balanced classes** and care about the overall model “correctness” and not the ability to predict a specific class. 
+- Accuracy is **easy to explain** and communicate. 
 
-# General Information
+**Cons:**
+- If you have **imbalanced classes**, accuracy is less useful since it gives equal weight to the model’s ability to predict all categories.
+- Communicating accuracy in such cases **can be misleading** and disguise low performance on the target class.
+### Precision
+---
+>**Precision** is a metric that measures how often a machine learning model correctly predicts the positive class. You can calculate precision by dividing the number of correct positive predictions (true positives) by the total number of instances the model predicted as positive (both true and false positives).
+$$Precision=\frac{True\_Positives}{All\_Positives}$$
+$$All\_Positives=True\_Positives+False\_Positives$$
+#### Pros and Cons
+---
+**Pros**
+- It works well for problems with **imbalanced classes** since it shows the model correctness in identifying the target class.
+- Precision is useful when the **cost of a false positive** is high. In this case, you typically want to be **confident in identifying the target class,** even if you miss out on some (or many) instances.
+
+**Cons**
+- Precision does not consider **false negatives.** Meaning: it does not account for the cases when we miss our target event!
+### Recall
+---
+> Recall is a metric that measures how often a machine learning model correctly identifies positive instances (true positives) from all the actual positive samples in the dataset. You can calculate recall by dividing the number of true positives by the number of positive instances. The latter includes true positives (successfully identified cases) and false negative results (missed cases).
+
+In other words, recall answers the question: can an ML model find all instances of the positive class?
+$$Recall=\frac{True\_Positives}{True\_Positives+False\_Negatives}$$
+#### Pros and Cons
+---
+**Pros**
+- It works well for problems with **imbalanced classes** since it is focused on the model’s ability to find objects of the target class.
+- Recall is useful when the **cost of false negatives** is high. In this case, you typically want to find **all objects of the target class,** even if this results in some false positives (predicting a positive when it is actually negative).
+
+**Cons**
+- Recall is that it does not account for the cost of these **false positives**.
+
+# General Information about `__call__`
 ### How it works 
 
 So I found some really helpful use case info on a [Real Python](https://realpython.com/python-callable-instances/#exploring-advanced-use-cases-of-__call__) page about the `__call__` method. 

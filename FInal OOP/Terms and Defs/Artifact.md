@@ -1,7 +1,7 @@
 ## My artifact code
 > This is a #ParentClass to [[Dataset]]
 ---
-> So this is not done yet. I still need to finish the `save` method and i think i need to change what the `read` method returns.
+> So this is not done yet. I still need to finish the `save` method and I think I need to change what the `read` method returns.
 
 ```python
 # TODO: We need to implement the save and read methods.

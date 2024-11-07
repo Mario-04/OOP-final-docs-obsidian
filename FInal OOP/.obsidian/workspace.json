@@ -205,10 +205,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "def92bf9ac89d948",
+  "active": "ea5f4cb872c9631e",
   "lastOpenFiles": [
-    "Setup/GPT Instructions.md",
+    "Terms and Defs/Artifact.md",
+    "Tests.md",
     "Terms and Defs/Metric.md",
+    "Setup/GPT Instructions.md",
     "Design Patterns/Design Pattern.md",
     "Setup/Instructions.md",
     "Design Patterns/Strategy Pattern.md",
@@ -219,8 +221,6 @@
     "Design Patterns",
     "Design Patterns/Decorator Pattern.md",
     "Design Patterns/Mixin Pattern.md",
-    "Tests.md",
-    "Terms and Defs/Artifact.md",
     "Setup/ChatGPT Setup.md",
     "Terms and Defs/AutoML.md",
     "Datasets/Adult Dataset.md",
