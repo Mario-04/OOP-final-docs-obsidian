@@ -8,40 +8,40 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2954ce7e1abc8074",
+            "id": "9bbabc4b4dc84606",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup/Instructions.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Instructions"
-            }
-          },
-          {
-            "id": "2fdb3fbcdd437212",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terms and Defs/Metric.md",
+                "file": "Design Patterns/Design Pattern.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metric"
+              "title": "Design Pattern"
             }
           },
           {
-            "id": "6db27b395d38b107",
+            "id": "99a58e95ed8a8b9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model.md",
+                "file": "Setup/GPT Instructions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GPT Instructions"
+            }
+          },
+          {
+            "id": "def92bf9ac89d948",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terms and Defs/Model.md",
                 "mode": "source",
                 "source": false
               },
@@ -50,20 +50,21 @@
             }
           },
           {
-            "id": "a39fe6263b2c084b",
+            "id": "6f2ab01d883df892",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terms and Defs/Feature.md",
+                "file": "Setup/GPT Instructions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Feature"
+              "title": "GPT Instructions"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model.md",
+                "file": "Terms and Defs/Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model.md",
+                "file": "Terms and Defs/Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -181,18 +182,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Setup/Instructions.md"
+                "file": "Terms and Defs/Feature.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Instructions"
+              "title": "Outline of Feature"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,19 +205,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "def92bf9ac89d948",
+  "active": "ea5f4cb872c9631e",
   "lastOpenFiles": [
-    "Terms and Defs/Metric.md",
-    "Setup/Instructions.md",
+    "implement.md",
+    "Terms and Defs/Model.md",
+    "Showandtell.md",
     "Setup/GPT Instructions.md",
-    "Model.md",
+    "Terms and Defs/Metric.md",
     "Tests.md",
     "README.md",
     "Pydantic.md",
     "Design Patterns/Design Pattern.md",
     "Terms and Defs/Artifact.md",
+    "Setup/Instructions.md",
     "Design Patterns/Strategy Pattern.md",
+    "Design Patterns/Iterator Pattern.md",
+    "Design Patterns/Façade Pattern.md",
+    "Design Patterns/Singleton Pattern.md",
+    "Datasets",
+    "Design Patterns",
+    "Design Patterns/Decorator Pattern.md",
+    "Design Patterns/Mixin Pattern.md",
     "Setup/ChatGPT Setup.md",
+    "Terms and Defs/AutoML.md",
+    "Datasets/Adult Dataset.md",
+    "Terms and Defs/Dataset.md",
+    "Terms and Defs/Feature.md",
+    "().md",
     "Setup/Mermaid.md",
-    "Showandtell.md",
- 
+    "Terms and Defs",
+    "Untitled.canvas",
+    "Welcome.md",
+    "create a link.md",
+    "Setup"
+  ]
+}
