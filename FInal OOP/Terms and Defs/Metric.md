@@ -7,8 +7,14 @@ We only need this for #classification and #continuous
 ---
 ## Continuous
 ---
+Get some of that good stuff from [here: Performance Metrics in Machine Learning](https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide)
 ### Mean Squared Error (MSE)
+---
 - #Regression
+```python 
+def meanSquaredError(ground: np.ndarray, predictions: np.ndarray) -> float:
+	return np.square(np.subtract(ground, predictions)).mean() 
+```
 The MSE measures the average of error squares i.e. the average squared difference between the estimated values and true values. According to [GFG](https://www.geeksforgeeks.org/python-mean-squared-error/):
 
 1. We need to find the Regression line:   
@@ -40,15 +46,23 @@ MSE = np.square(np.subtract(Y_true,Y_pred)).mean()
 ```
 
 
+
 ### Mean Absolute Error (MAE)
+---
 - `MAE` is measured as the average sum of absolute difference between predictions and actual observations
 - `MAE` is more robust against outliers because it does not make use of squares
 
 $$MAE = \frac{1}{N}\sum_{i=1}^{N}|\hat{Y_i}-Y_i|$$
 ```python
 def meanSquaredError(ground: np.ndarray, predictions: np.ndarray) -> float:
-
+	return (np.sum(np.abs(np.subtract(ground,predictions))) / len(ground))
 ```
+
+### Root Mean Squared Error (RMSE)
+---
+
+### R² (R-Squared)
+---
 
 ## Classification
 ---
@@ -97,6 +111,10 @@ Let’s sum up the accuracy metric!
 >**Precision** is a metric that measures how often a machine learning model correctly predicts the positive class. You can calculate precision by dividing the number of correct positive predictions (true positives) by the total number of instances the model predicted as positive (both true and false positives).
 $$Precision=\frac{True\_Positives}{All\_Positives}$$
 $$All\_Positives=True\_Positives+False\_Positives$$
+```python
+def precision(ground: np.ndarray, predictions: np.ndarray) -> float:
+	  
+```
 #### Pros and Cons
 ---
 **Pros**
@@ -124,7 +142,8 @@ $$Recall=\frac{True\_Positives}{True\_Positives+False\_Negatives}$$
 ### How it works 
 
 So I found some really helpful use case info on a [Real Python](https://realpython.com/python-callable-instances/#exploring-advanced-use-cases-of-__call__) page about the `__call__` method. 
-They implement it using a #DesignPattern called the [[Strategy Pattern]]
+They [[implement]] it using a #DesignPattern called the [[Strategy Pattern]]
+[[Showandtell]]
 
 ```python
 # serializing.py

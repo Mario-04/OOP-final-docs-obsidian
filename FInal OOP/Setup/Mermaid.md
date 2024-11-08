@@ -20,3 +20,4 @@ classDiagram
     Character : +String description
     Character : +void interact()
 ```
+
