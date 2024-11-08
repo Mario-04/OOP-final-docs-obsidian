@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terms and Defs/Artifact.md",
+                "file": "Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Artifact"
+              "title": "Model"
             }
           },
           {
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Setup/Instructions.md",
+                "file": "Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Instructions"
+              "title": "Backlinks for Model"
             }
           },
           {
@@ -154,12 +154,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Setup/Instructions.md",
+                "file": "Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Instructions"
+              "title": "Outgoing links from Model"
             }
           },
           {
@@ -204,38 +204,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2954ce7e1abc8074",
+  "active": "def92bf9ac89d948",
   "lastOpenFiles": [
     "Terms and Defs/Metric.md",
     "Setup/Instructions.md",
     "Setup/GPT Instructions.md",
+    "Model.md",
+    "Tests.md",
+    "README.md",
+    "Pydantic.md",
+    "Design Patterns/Design Pattern.md",
+    "Terms and Defs/Artifact.md",
     "Design Patterns/Strategy Pattern.md",
     "Setup/ChatGPT Setup.md",
     "Setup/Mermaid.md",
     "Showandtell.md",
-    "Terms and Defs/Feature.md",
-    "Terms and Defs/Artifact.md",
-    "Terms and Defs/AutoML.md",
-    "Terms and Defs/Dataset.md",
-    "implement.md",
-    "README.md",
-    "Tests.md",
-    "Design Patterns/Design Pattern.md",
-    "Design Patterns/Iterator Pattern.md",
-    "Design Patterns/Façade Pattern.md",
-    "Design Patterns/Singleton Pattern.md",
-    "Datasets",
-    "Design Patterns",
-    "Design Patterns/Decorator Pattern.md",
-    "Design Patterns/Mixin Pattern.md",
-    "Datasets/Adult Dataset.md",
-    "Pydantic.md",
-    "().md",
-    "Terms and Defs",
-    "Untitled.canvas",
-    "Welcome.md",
-    "create a link.md",
-    "2024-11-03.md",
-    "Setup"
-  ]
-}
+ 
