@@ -1,0 +1,26 @@
+
+# Ignore Obsidian workspace settings
+workspace.json
+
+# Ignore system and cache files
+.obsidian/workspace.json
+.obsidian/.DS_Store
+.obsidian/.obsidian/workspace
+.obsidian/plugins/*
+.obsidian/obsidian.json
+.obsidian/graph.json
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Obsidian sync-related files
+.obsidian/sync.json
+.obsidian/metadata.json
+
+# Ignore temporary files
+*.swp
+*.tmp
+*.temp
+*.bak
+*.backup

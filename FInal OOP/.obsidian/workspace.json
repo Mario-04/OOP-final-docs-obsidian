@@ -150,7 +150,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Decision Tree Classifier.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +159,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Decision Tree Classifier"
+              "title": "Backlinks"
             }
           },
           {
@@ -196,10 +195,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Decision Tree Classifier.md"
+                "file": "Untitled.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Decision Tree Classifier"
+              "title": "Outline of Untitled"
             }
           }
         ]
@@ -218,10 +217,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9cfd98eced46f2de",
+  "active": "ea5f4cb872c9631e",
   "lastOpenFiles": [
-    "Models/Model.md",
     "Decision Tree Classifier.md",
+    "Untitled.md",
+    "Untitled",
+    "Models/Model.md",
     "Terms and Defs/Metric.md",
     "Showandtell.md",
     "Setup/GPT Instructions.md",
@@ -246,7 +247,6 @@
     "Design Patterns/Design Pattern.md",
     "Design Patterns/Iterator Pattern.md",
     "Design Patterns/Façade Pattern.md",
-    "Design Patterns/Singleton Pattern.md",
     "Datasets",
     "Design Patterns",
     "Terms and Defs",
