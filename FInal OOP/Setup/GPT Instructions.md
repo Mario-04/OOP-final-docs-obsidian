@@ -66,14 +66,14 @@ Each term below links to its dedicated note. Create separate notes with each ter
    - [x] Implement in `autoop.core.ml.artifact`.
 - [x] **Feature Class**:
    - [x] Implement in `autoop.core.ml.feature`.
-- [ ] **Metric Class**:
-   - [ ] Implement the metric class in `autoop.core.ml.metric` with the `__call__` method.
-- [ ] **Metric Extensions**:
-   - [ ] Add at least 6 metrics in `ML/metric/extensions`.
-   - [ ] Ensure at least 3 metrics are suitable for classification.
-   - [ ] Implement **Accuracy** metric for classification.
-   - [ ] Implement **Mean Squared Error** metric for regression.
-   - [ ] Do not use facades/wrappers for metric implementation; use libraries such as `numpy`.
+- [x] **Metric Class**:
+   - [x] Implement the metric class in `autoop.core.ml.metric` with the `__call__` method.
+- [x] **Metric Extensions**:
+   - [x] Add at least 6 metrics in `ML/metric/extensions`.
+   - [x] Ensure at least 3 metrics are suitable for classification.
+   - [x] Implement **Accuracy** metric for classification.
+   - [x] Implement **Mean Squared Error** metric for regression.
+   - [x] Do not use facades/wrappers for metric implementation; use libraries such as `numpy`.
 - [ ] **Base Model Class**:
    - [ ] Implement the base model class in `autoop.core.ml.model`.
 - [ ] **Model Extensions**:
@@ -81,7 +81,7 @@ Each term below links to its dedicated note. Create separate notes with each ter
    - [ ] Implement at least 3 regression models in `ML/model/extensions`.
    - [ ] You may use the facade pattern or wrappers on existing libraries for these models.
 - [ ] **Pipeline Evaluation**:
-   - [ ] Extend and modify the `execute` function in `ML/pipeline/evaluation` to return metrics for both the evaluation and training sets.
+   - [ ] Extend and modify the `execute` function in `ML/pipeline/evaluation` to return metrics for both the **evaluation** and **training sets**.
 
 
 **Backlinks**: [[Artifact]], [[Feature]], [[Metric]], [[Model]], [[Pipeline]], [[Dataset]], [[Pydantic]], [[Tests]]

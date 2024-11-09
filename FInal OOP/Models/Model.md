@@ -1,4 +1,14 @@
 In model, we need to implement a 1. Regression model, 2. Classification model
+> The Models that inherit from this class:
+> [[Linear Regression]]
+> [[Logistic Regression]]
+> [[KNearestNeighbour]]
+> [[Polynomial Regression]]
+
+New information from chatgpt
+> [[Softmax Multinomial Regression]]
+> [[Decision Tree Classifier]]
+> 
 
 Both are known as supervised learning algorithms and work with **labelled** data sets
 
